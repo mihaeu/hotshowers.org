@@ -1,0 +1,14 @@
+{
+    "name": "mihaeu/hotshowers.org",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Michael Haeuslmann",
+            "email": "haeuslmann@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": { "Mihaeu\\Hotshowers\\": ["src/", "tests/"] }
+    }
+}
