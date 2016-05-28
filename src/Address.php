@@ -21,18 +21,18 @@ class Address
     private $houseNumber;
 
     /**
-     * @param string $city
-     * @param string $country
-     * @param int $zipCode
-     * @param string $street
-     * @param string $houseNumber
+     * @param City $city
+     * @param Country $country
+     * @param ZipCode $zipCode
+     * @param Street $street
+     * @param HouseNumber $houseNumber
      */
     public function __construct(
-        string $city,
-        string $country,
-        int $zipCode,
-        string $street,
-        string $houseNumber
+        City $city,
+        Country $country,
+        ZipCode $zipCode,
+        Street $street,
+        HouseNumber $houseNumber
     ) {
         $this->city = $city;
         $this->country = $country;

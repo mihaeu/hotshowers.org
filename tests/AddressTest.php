@@ -4,6 +4,12 @@ namespace Mihaeu\Hotshowers;
 
 /**
  * @covers Mihaeu\Hotshowers\Address
+ *
+ * @uses Mihaeu\Hotshowers\City
+ * @uses Mihaeu\Hotshowers\Country
+ * @uses Mihaeu\Hotshowers\HouseNumber
+ * @uses Mihaeu\Hotshowers\Street
+ * @uses Mihaeu\Hotshowers\ZipCode
  */
 class AddressTest extends \PHPUnit_Framework_TestCase
 {
@@ -13,36 +19,36 @@ class AddressTest extends \PHPUnit_Framework_TestCase
     public function setUp()
     {
         $this->address = new Address(
-            'Testcity',
-            'Testcountry',
-            12345,
-            'Teststreet',
-            '123abc'
+            new City('Testcity'),
+            Country::DE(),
+            new ZipCode(12345),
+            new Street('Test'),
+            new HouseNumber('123abc')
         );
     }
 
     public function testHasCity()
     {
-        $this->assertEquals('Testcity', $this->address->city());
+        $this->assertEquals(new City('Testcity'), $this->address->city());
     }
 
     public function testHasCountry()
     {
-        $this->assertEquals('Testcountry', $this->address->country());
+        $this->assertEquals(Country::DE(), $this->address->country());
     }
 
     public function testHasZipCode()
     {
-        $this->assertEquals(12345, $this->address->zipCode());
+        $this->assertEquals(new ZipCode(12345), $this->address->zipCode());
     }
 
     public function testHasStreet()
     {
-        $this->assertEquals('Teststreet', $this->address->street());
+        $this->assertEquals(new Street('Test'), $this->address->street());
     }
 
     public function testHasHouseNumber()
     {
-        $this->assertEquals('123abc', $this->address->houseNumber());
+        $this->assertEquals(new HouseNumber('123abc'), $this->address->houseNumber());
     }
 }
