@@ -5,27 +5,25 @@ namespace Mihaeu\Hotshowers;
 class Country
 {
     /** @var string */
-    private $country;
+    private $iso3166;
 
     /**
-     * @param string $country
+     * @param string $iso3166
      */
-    private function __construct(string $country)
+    private function __construct(string $iso3166)
     {
-        $this->country = $country;
+        $this->iso3166 = $iso3166;
     }
 
     /**
      * @return string
      */
-    public function country()
+    public function iso3166()
     {
-        return $this->country;
+        return $this->iso3166;
     }
 
     /**
-     * @codeCoverageIgnore
-     * 
      * @return Country
      */
     public static function AD() : Country
@@ -34,8 +32,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function AE() : Country
@@ -44,8 +40,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function AF() : Country
@@ -54,8 +48,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function AG() : Country
@@ -64,8 +56,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function AI() : Country
@@ -74,8 +64,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function AL() : Country
@@ -84,8 +72,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function AM() : Country
@@ -94,8 +80,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function AO() : Country
@@ -104,8 +88,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function AP() : Country
@@ -114,8 +96,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function AQ() : Country
@@ -124,8 +104,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function AR() : Country
@@ -134,8 +112,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function AS() : Country
@@ -144,8 +120,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function AT() : Country
@@ -154,8 +128,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function AU() : Country
@@ -164,8 +136,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function AW() : Country
@@ -174,8 +144,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function AX() : Country
@@ -184,8 +152,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function AZ() : Country
@@ -194,8 +160,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function BA() : Country
@@ -204,8 +168,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function BB() : Country
@@ -214,8 +176,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function BD() : Country
@@ -224,8 +184,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function BE() : Country
@@ -234,8 +192,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function BF() : Country
@@ -244,8 +200,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function BG() : Country
@@ -254,8 +208,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function BH() : Country
@@ -264,8 +216,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function BI() : Country
@@ -274,8 +224,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function BJ() : Country
@@ -284,8 +232,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function BL() : Country
@@ -294,8 +240,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function BM() : Country
@@ -304,8 +248,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function BN() : Country
@@ -314,8 +256,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function BO() : Country
@@ -324,8 +264,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function BQ() : Country
@@ -334,8 +272,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function BR() : Country
@@ -344,8 +280,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function BS() : Country
@@ -354,8 +288,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function BT() : Country
@@ -364,8 +296,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function BV() : Country
@@ -374,8 +304,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function BW() : Country
@@ -384,8 +312,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function BY() : Country
@@ -394,8 +320,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function BZ() : Country
@@ -404,8 +328,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function CA() : Country
@@ -414,8 +336,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function CC() : Country
@@ -424,8 +344,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function CD() : Country
@@ -434,8 +352,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function CF() : Country
@@ -444,8 +360,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function CG() : Country
@@ -454,8 +368,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function CH() : Country
@@ -464,8 +376,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function CI() : Country
@@ -474,8 +384,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function CK() : Country
@@ -484,8 +392,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function CL() : Country
@@ -494,8 +400,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function CM() : Country
@@ -504,8 +408,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function CN() : Country
@@ -514,8 +416,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function CO() : Country
@@ -524,8 +424,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function CR() : Country
@@ -534,8 +432,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function CU() : Country
@@ -544,8 +440,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function CV() : Country
@@ -554,8 +448,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function CW() : Country
@@ -564,8 +456,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function CX() : Country
@@ -574,8 +464,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function CY() : Country
@@ -584,8 +472,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function CZ() : Country
@@ -594,8 +480,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function DE() : Country
@@ -604,8 +488,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function DJ() : Country
@@ -614,8 +496,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function DK() : Country
@@ -624,8 +504,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function DM() : Country
@@ -634,8 +512,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function DO() : Country
@@ -644,8 +520,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function DZ() : Country
@@ -654,8 +528,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function EC() : Country
@@ -664,8 +536,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function EE() : Country
@@ -674,8 +544,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function EG() : Country
@@ -684,8 +552,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function EH() : Country
@@ -694,8 +560,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function ER() : Country
@@ -704,8 +568,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function ES() : Country
@@ -714,8 +576,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function ET() : Country
@@ -724,8 +584,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function EU() : Country
@@ -734,8 +592,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function FI() : Country
@@ -744,8 +600,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function FJ() : Country
@@ -754,8 +608,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function FK() : Country
@@ -764,8 +616,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function FM() : Country
@@ -774,8 +624,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function FO() : Country
@@ -784,8 +632,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function FR() : Country
@@ -794,8 +640,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function GA() : Country
@@ -804,8 +648,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function GB() : Country
@@ -814,8 +656,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function GD() : Country
@@ -824,8 +664,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function GE() : Country
@@ -834,8 +672,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function GF() : Country
@@ -844,8 +680,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function GG() : Country
@@ -854,8 +688,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function GH() : Country
@@ -864,8 +696,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function GI() : Country
@@ -874,8 +704,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function GL() : Country
@@ -884,8 +712,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function GM() : Country
@@ -894,8 +720,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function GN() : Country
@@ -904,8 +728,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function GP() : Country
@@ -914,8 +736,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function GQ() : Country
@@ -924,8 +744,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function GR() : Country
@@ -934,8 +752,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function GS() : Country
@@ -944,8 +760,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function GT() : Country
@@ -954,8 +768,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function GU() : Country
@@ -964,8 +776,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function GW() : Country
@@ -974,8 +784,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function GY() : Country
@@ -984,8 +792,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function HK() : Country
@@ -994,8 +800,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function HM() : Country
@@ -1004,8 +808,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function HN() : Country
@@ -1014,8 +816,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function HR() : Country
@@ -1024,8 +824,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function HT() : Country
@@ -1034,8 +832,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function HU() : Country
@@ -1044,8 +840,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function ID() : Country
@@ -1054,8 +848,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function IE() : Country
@@ -1064,8 +856,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function IL() : Country
@@ -1074,8 +864,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function IM() : Country
@@ -1084,8 +872,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function IN() : Country
@@ -1094,8 +880,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function IO() : Country
@@ -1104,8 +888,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function IQ() : Country
@@ -1114,8 +896,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function IR() : Country
@@ -1124,8 +904,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function IS() : Country
@@ -1134,8 +912,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function IT() : Country
@@ -1144,8 +920,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function JE() : Country
@@ -1154,8 +928,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function JM() : Country
@@ -1164,8 +936,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function JO() : Country
@@ -1174,8 +944,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function JP() : Country
@@ -1184,8 +952,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function KE() : Country
@@ -1194,8 +960,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function KG() : Country
@@ -1204,8 +968,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function KH() : Country
@@ -1214,8 +976,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function KI() : Country
@@ -1224,8 +984,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function KM() : Country
@@ -1234,8 +992,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function KN() : Country
@@ -1244,8 +1000,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function KP() : Country
@@ -1254,8 +1008,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function KR() : Country
@@ -1264,8 +1016,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function KW() : Country
@@ -1274,8 +1024,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function KY() : Country
@@ -1284,8 +1032,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function KZ() : Country
@@ -1294,8 +1040,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function LA() : Country
@@ -1304,8 +1048,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function LB() : Country
@@ -1314,8 +1056,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function LC() : Country
@@ -1324,8 +1064,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function LI() : Country
@@ -1334,8 +1072,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function LK() : Country
@@ -1344,8 +1080,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function LR() : Country
@@ -1354,8 +1088,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function LS() : Country
@@ -1364,8 +1096,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function LT() : Country
@@ -1374,8 +1104,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function LU() : Country
@@ -1384,8 +1112,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function LV() : Country
@@ -1394,8 +1120,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function LY() : Country
@@ -1404,8 +1128,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function MA() : Country
@@ -1414,8 +1136,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function MC() : Country
@@ -1424,8 +1144,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function MD() : Country
@@ -1434,8 +1152,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function ME() : Country
@@ -1444,8 +1160,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function MF() : Country
@@ -1454,8 +1168,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function MG() : Country
@@ -1464,8 +1176,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function MH() : Country
@@ -1474,8 +1184,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function MK() : Country
@@ -1484,8 +1192,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function ML() : Country
@@ -1494,8 +1200,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function MM() : Country
@@ -1504,8 +1208,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function MN() : Country
@@ -1514,8 +1216,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function MO() : Country
@@ -1524,8 +1224,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function MP() : Country
@@ -1534,8 +1232,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function MQ() : Country
@@ -1544,8 +1240,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function MR() : Country
@@ -1554,8 +1248,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function MS() : Country
@@ -1564,8 +1256,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function MT() : Country
@@ -1574,8 +1264,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function MU() : Country
@@ -1584,8 +1272,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function MV() : Country
@@ -1594,8 +1280,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function MW() : Country
@@ -1604,8 +1288,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function MX() : Country
@@ -1614,8 +1296,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function MY() : Country
@@ -1624,8 +1304,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function MZ() : Country
@@ -1634,8 +1312,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function NA() : Country
@@ -1644,8 +1320,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function NC() : Country
@@ -1654,8 +1328,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function NE() : Country
@@ -1664,8 +1336,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function NF() : Country
@@ -1674,8 +1344,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function NG() : Country
@@ -1684,8 +1352,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function NI() : Country
@@ -1694,8 +1360,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function NL() : Country
@@ -1704,8 +1368,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function NO() : Country
@@ -1714,8 +1376,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function NP() : Country
@@ -1724,8 +1384,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function NR() : Country
@@ -1734,8 +1392,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function NU() : Country
@@ -1744,8 +1400,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function NZ() : Country
@@ -1754,8 +1408,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function OM() : Country
@@ -1764,8 +1416,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function PA() : Country
@@ -1774,8 +1424,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function PE() : Country
@@ -1784,8 +1432,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function PF() : Country
@@ -1794,8 +1440,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function PG() : Country
@@ -1804,8 +1448,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function PH() : Country
@@ -1814,8 +1456,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function PK() : Country
@@ -1824,8 +1464,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function PL() : Country
@@ -1834,8 +1472,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function PM() : Country
@@ -1844,8 +1480,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function PN() : Country
@@ -1854,8 +1488,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function PR() : Country
@@ -1864,8 +1496,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function PS() : Country
@@ -1874,8 +1504,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function PT() : Country
@@ -1884,8 +1512,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function PW() : Country
@@ -1894,8 +1520,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function PY() : Country
@@ -1904,8 +1528,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function QA() : Country
@@ -1914,8 +1536,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function RE() : Country
@@ -1924,8 +1544,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function RO() : Country
@@ -1934,8 +1552,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function RS() : Country
@@ -1944,8 +1560,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function RU() : Country
@@ -1954,8 +1568,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function RW() : Country
@@ -1964,8 +1576,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function SA() : Country
@@ -1974,8 +1584,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function SB() : Country
@@ -1984,8 +1592,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function SC() : Country
@@ -1994,8 +1600,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function SD() : Country
@@ -2004,8 +1608,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function SE() : Country
@@ -2014,8 +1616,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function SG() : Country
@@ -2024,8 +1624,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function SH() : Country
@@ -2034,8 +1632,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function SI() : Country
@@ -2044,8 +1640,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function SJ() : Country
@@ -2054,8 +1648,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function SK() : Country
@@ -2064,8 +1656,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function SL() : Country
@@ -2074,8 +1664,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function SM() : Country
@@ -2084,8 +1672,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function SN() : Country
@@ -2094,8 +1680,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function SO() : Country
@@ -2104,8 +1688,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function SR() : Country
@@ -2114,8 +1696,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function SS() : Country
@@ -2124,8 +1704,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function ST() : Country
@@ -2134,8 +1712,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function SV() : Country
@@ -2144,8 +1720,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function SX() : Country
@@ -2154,8 +1728,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function SY() : Country
@@ -2164,8 +1736,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function SZ() : Country
@@ -2174,8 +1744,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function TC() : Country
@@ -2184,8 +1752,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function TD() : Country
@@ -2194,8 +1760,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function TF() : Country
@@ -2204,8 +1768,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function TG() : Country
@@ -2214,8 +1776,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function TH() : Country
@@ -2224,8 +1784,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function TJ() : Country
@@ -2234,8 +1792,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function TK() : Country
@@ -2244,8 +1800,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function TL() : Country
@@ -2254,8 +1808,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function TM() : Country
@@ -2264,8 +1816,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function TN() : Country
@@ -2274,8 +1824,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function TO() : Country
@@ -2284,8 +1832,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function TR() : Country
@@ -2294,8 +1840,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function TT() : Country
@@ -2304,8 +1848,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function TV() : Country
@@ -2314,8 +1856,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function TW() : Country
@@ -2324,8 +1864,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function TZ() : Country
@@ -2334,8 +1872,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function UA() : Country
@@ -2344,8 +1880,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function UG() : Country
@@ -2354,8 +1888,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function UM() : Country
@@ -2364,8 +1896,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function US() : Country
@@ -2374,8 +1904,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function UY() : Country
@@ -2384,8 +1912,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function UZ() : Country
@@ -2394,8 +1920,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function VA() : Country
@@ -2404,8 +1928,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function VC() : Country
@@ -2414,8 +1936,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function VE() : Country
@@ -2424,8 +1944,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function VG() : Country
@@ -2434,8 +1952,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function VI() : Country
@@ -2444,8 +1960,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function VN() : Country
@@ -2454,8 +1968,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function VU() : Country
@@ -2464,8 +1976,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function WF() : Country
@@ -2474,8 +1984,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function WS() : Country
@@ -2484,8 +1992,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function YE() : Country
@@ -2494,8 +2000,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function YT() : Country
@@ -2504,8 +2008,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function ZA() : Country
@@ -2514,8 +2016,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function ZM() : Country
@@ -2524,8 +2024,6 @@ class Country
     }
 
     /**
-     * @codeCoverageIgnore
-     *
      * @return Country
      */
     public static function ZW() : Country
