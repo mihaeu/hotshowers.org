@@ -19,7 +19,7 @@ class Email
     /**
      * @return string
      */
-    public function address()
+    public function address() : string
     {
         return $this->address;
     }

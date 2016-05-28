@@ -24,7 +24,7 @@ class Location
     /**
      * @return float
      */
-    public function longitude()
+    public function longitude() : float
     {
         return $this->longitude;
     }
@@ -32,7 +32,7 @@ class Location
     /**
      * @return float
      */
-    public function latitude()
+    public function latitude() : float
     {
         return $this->latitude;
     }

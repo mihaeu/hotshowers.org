@@ -18,7 +18,7 @@ class HouseNumber
     /**
      * @return string
      */
-    public function number()
+    public function number() : string
     {
         return $this->number;
     }

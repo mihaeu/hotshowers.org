@@ -38,7 +38,7 @@ class User
     /**
      * @return Username
      */
-    public function username()
+    public function username() : Username
     {
         return $this->username;
     }
@@ -46,7 +46,7 @@ class User
     /**
      * @return Email
      */
-    public function email()
+    public function email() : Email
     {
         return $this->email;
     }
@@ -54,7 +54,7 @@ class User
     /**
      * @return Address
      */
-    public function address()
+    public function address() : Address
     {
         return $this->address;
     }
@@ -62,7 +62,7 @@ class User
     /**
      * @return Password
      */
-    public function password()
+    public function password() : Password
     {
         return $this->password;
     }
@@ -70,7 +70,7 @@ class User
     /**
      * @return Location
      */
-    public function location()
+    public function location() : Location
     {
         return $this->location;
     }
@@ -78,7 +78,7 @@ class User
     /**
      * @return PhoneNumber
      */
-    public function phoneNumber()
+    public function phoneNumber() : PhoneNumber
     {
         return $this->phoneNumber;
     }

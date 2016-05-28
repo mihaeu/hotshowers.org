@@ -18,7 +18,7 @@ class Password
     /**
      * @return string
      */
-    public function password()
+    public function password() : string
     {
         return $this->password;
     }

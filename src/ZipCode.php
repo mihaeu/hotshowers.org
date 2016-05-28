@@ -18,7 +18,7 @@ class ZipCode
     /**
      * @return int
      */
-    public function zipCode()
+    public function zipCode() : int
     {
         return $this->zipCode;
     }

@@ -18,7 +18,7 @@ class Street
     /**
      * @return string
      */
-    public function street()
+    public function street() : string
     {
         return $this->street;
     }

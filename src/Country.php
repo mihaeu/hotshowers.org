@@ -18,7 +18,7 @@ class Country
     /**
      * @return string
      */
-    public function iso3166()
+    public function iso3166() : string
     {
         return $this->iso3166;
     }

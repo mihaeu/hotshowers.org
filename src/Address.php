@@ -44,7 +44,7 @@ class Address
     /**
      * @return string
      */
-    public function city()
+    public function city() : City
     {
         return $this->city;
     }
@@ -52,7 +52,7 @@ class Address
     /**
      * @return string
      */
-    public function country()
+    public function country() : Country
     {
         return $this->country;
     }
@@ -60,7 +60,7 @@ class Address
     /**
      * @return int
      */
-    public function zipCode()
+    public function zipCode() : ZipCode
     {
         return $this->zipCode;
     }
@@ -68,7 +68,7 @@ class Address
     /**
      * @return string
      */
-    public function street()
+    public function street() : Street
     {
         return $this->street;
     }
@@ -76,7 +76,7 @@ class Address
     /**
      * @return string
      */
-    public function houseNumber()
+    public function houseNumber() : HouseNumber
     {
         return $this->houseNumber;
     }
