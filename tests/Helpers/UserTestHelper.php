@@ -21,14 +21,20 @@ use Mihaeu\Hotshowers\ZipCode;
 
 class UserTestHelper
 {
-    public static function user(string $username = 'Test', string $email = 'test@test.com') : User
+    public static function user(
+        string $username = 'Test',
+        string $email = 'test@test.com',
+        $city = 'Testcity',
+        $firstName = 'First',
+        $lastName = 'Last'
+    ) : User
     {
         return new User(
-            new Name(new FirstName('First'), new LastName('Last')),
+            new Name(new FirstName($firstName), new LastName($lastName)),
             new Username($username),
             new Email($email),
             new Address(
-                new City('Testcity'),
+                new City($city),
                 Country::DE(),
                 new ZipCode(12345),
                 new Street('Test'),

@@ -43,6 +43,6 @@ class UserCollection implements \IteratorAggregate
      */
     public function getIterator() : Traversable
     {
-        return new \ArrayIterator($this->users);
+        return new \ArrayIterator(array_values($this->users));
     }
 }
