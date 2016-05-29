@@ -1,4 +1,4 @@
-# hotshowers.org
+# hotshowers.org [![Travis](https://img.shields.io/travis/mihaeu/hotshowers.org.svg?maxAge=2592000)]() [![Coveralls](https://img.shields.io/coveralls/mihaeu/hotshowers.org.svg?maxAge=2592000)]()
 
 > A complete re-write of warmshowers.org.
 
