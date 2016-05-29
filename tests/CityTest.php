@@ -10,6 +10,6 @@ class CityTest extends \PHPUnit_Framework_TestCase
     public function testHasCity()
     {
         $city = new City('Test');
-        $this->assertEquals('Test', $city->city());
+        $this->assertEquals('Test', $city);
     }
 }

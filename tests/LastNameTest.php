@@ -9,6 +9,6 @@ class LastNameTest extends \PHPUnit_Framework_TestCase
 {
     public function testHasLastName()
     {
-        $this->assertEquals('Last', (new LastName('Last'))->lastName());
+        $this->assertEquals('Last', new LastName('Last'));
     }
 }

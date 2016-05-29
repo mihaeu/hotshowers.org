@@ -50,29 +50,29 @@ class UserFileMapper implements UserMapper
     public function findByName(string $query) : UserCollection
     {
         return $this->read()->filter(function (User $user) use ($query) {
-            return strpos($user->name()->firstName()->firstName(), $query) !== false
-                || strpos($user->name()->lastName()->lastName(), $query) !== false;
+            return strpos((string) $user->name()->firstName(), $query) !== false
+                || strpos((string) $user->name()->lastName(), $query) !== false;
         });
     }
 
     public function findByEmail(string $query) : UserCollection
     {
         return $this->read()->filter(function (User $user) use ($query) {
-            return strpos($user->email()->address(), $query) !== false;
+            return strpos((string) $user->email(), $query) !== false;
         });
     }
 
     public function findByUsername(string $query) : UserCollection
     {
         return $this->read()->filter(function (User $user) use ($query) {
-            return strpos($user->username()->username(), $query) !== false;
+            return strpos((string) $user->username(), $query) !== false;
         });
     }
 
     public function findByCity(string $query) : UserCollection
     {
         return $this->read()->filter(function (User $user) use ($query) {
-            return strpos($user->address()->city()->city(), $query) !== false;
+            return strpos((string) $user->address()->city(), $query) !== false;
         });
     }
 

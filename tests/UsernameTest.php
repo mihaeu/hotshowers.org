@@ -9,7 +9,6 @@ class UsernameTest extends \PHPUnit_Framework_TestCase
 {
     public function testHasUserName()
     {
-        $username = new Username('test');
-        $this->assertEquals('test', $username->username());
+        $this->assertEquals('test', new Username('test'));
     }
 }

@@ -9,6 +9,6 @@ class FirstNameTest extends \PHPUnit_Framework_TestCase
 {
     public function testHasFirstName()
     {
-        $this->assertEquals('First', (new FirstName('First'))->firstName());
+        $this->assertEquals('First', new FirstName('First'));
     }
 }

@@ -36,7 +36,7 @@ class UserTestHelper
             new Address(
                 new City($city),
                 Country::DE(),
-                new ZipCode(12345),
+                new ZipCode('12345'),
                 new Street('Test'),
                 new HouseNumber('123abc')
             ),

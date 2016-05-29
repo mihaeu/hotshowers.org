@@ -18,7 +18,7 @@ class Street
     /**
      * @return string
      */
-    public function street() : string
+    public function __toString() : string
     {
         return $this->street;
     }

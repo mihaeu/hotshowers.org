@@ -18,7 +18,7 @@ class Password
     /**
      * @return string
      */
-    public function password() : string
+    public function __toString() : string
     {
         return $this->password;
     }

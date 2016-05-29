@@ -18,7 +18,7 @@ class FirstName
     /**
      * @return string
      */
-    public function firstName() : string
+    public function __toString() : string
     {
         return $this->firstName;
     }

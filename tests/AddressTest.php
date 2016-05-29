@@ -21,7 +21,7 @@ class AddressTest extends \PHPUnit_Framework_TestCase
         $this->address = new Address(
             new City('Testcity'),
             Country::DE(),
-            new ZipCode(12345),
+            new ZipCode('12345'),
             new Street('Test'),
             new HouseNumber('123abc')
         );
@@ -39,7 +39,7 @@ class AddressTest extends \PHPUnit_Framework_TestCase
 
     public function testHasZipCode()
     {
-        $this->assertEquals(new ZipCode(12345), $this->address->zipCode());
+        $this->assertEquals('12345', $this->address->zipCode());
     }
 
     public function testHasStreet()

@@ -4,21 +4,21 @@ namespace Mihaeu\Hotshowers;
 
 class ZipCode
 {
-    /** @var int */
+    /** @var string */
     private $zipCode;
 
     /**
-     * @param int $zipCode
+     * @param string $zipCode
      */
-    public function __construct(int $zipCode)
+    public function __construct(string $zipCode)
     {
         $this->zipCode = $zipCode;
     }
 
     /**
-     * @return int
+     * @return string
      */
-    public function zipCode() : int
+    public function __toString() : string
     {
         return $this->zipCode;
     }

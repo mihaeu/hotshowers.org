@@ -18,7 +18,7 @@ class PhoneNumber
     /**
      * @return string
      */
-    public function number() : string
+    public function __toString() : string
     {
         return $this->number;
     }

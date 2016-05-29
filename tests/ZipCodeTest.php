@@ -9,6 +9,6 @@ class ZipCodeTest extends \PHPUnit_Framework_TestCase
 {
     public function testHasZipCode()
     {
-        $this->assertEquals(12345, (new ZipCode(12345))->zipCode());
+        $this->assertEquals('12345', new ZipCode('12345'));
     }
 }

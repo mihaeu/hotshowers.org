@@ -61,8 +61,8 @@ class UserCollectionTest extends \PHPUnit_Framework_TestCase
             ->add(UserTestHelper::user('user1'))
             ->add(UserTestHelper::user('user3'))
             ->filter(function (User $user) {
-                return $user->username()->username() === 'user1';
+                return (string) $user->username() === 'user1';
             });
-        $this->assertEquals('user1', iterator_to_array($users1)[0]->username()->username());
+        $this->assertEquals('user1', iterator_to_array($users1)[0]->username());
     }
 }

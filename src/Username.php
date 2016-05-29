@@ -19,7 +19,7 @@ class Username
     /**
      * @return string
      */
-    public function username() : string
+    public function __toString() : string
     {
         return $this->username;
     }

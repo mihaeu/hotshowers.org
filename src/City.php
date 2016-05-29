@@ -18,7 +18,7 @@ class City
     /**
      * @return string
      */
-    public function city() : string
+    public function __toString() : string
     {
         return $this->city;
     }
