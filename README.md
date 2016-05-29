@@ -15,11 +15,11 @@ I would love to see more contributions to warmshowers.org, but was frustrated my
 
 ## Features
 
- - a user has a username, email, address, phone number, latitude and longitude  and password
- - an address consists of a city, zip code, country, street and house number
- - a user can find other users by username, name, email and city
- - a user can write messages to other users
- - a user can write a request to other users
- - a user has a profile
- - a user can reply to a message
- - a new user has to sign up
+ - [x] a user has a username, email, address, phone number, latitude and longitude  and password
+ - [x] an address consists of a city, zip code, country, street and house number
+ - [x] a user can find other users by username, name, email and city
+ - [ ] a user can write messages to other users
+ - [ ] a user can write a request to other users
+ - [ ] a user has a profile
+ - [ ] a user can reply to a message
+ - [ ] a new user has to sign up
