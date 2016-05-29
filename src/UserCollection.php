@@ -4,14 +4,20 @@ namespace Mihaeu\Hotshowers;
 
 use Traversable;
 
+/**
+ * Immutable User Collection
+ */
 class UserCollection implements \IteratorAggregate
 {
     /** @var User[] */
     private $users = [];
 
-    public function add(User $user)
+    public function add(User $user) : UserCollection
     {
-        $this->users[] = $user;
+        $users = new UserCollection();
+        $users->users = $this->users;
+        $users->users[] = $user;
+        return $users;
     }
 
     public function addAll(UserCollection $users) : UserCollection
@@ -21,6 +27,13 @@ class UserCollection implements \IteratorAggregate
         return $newUsers;
     }
 
+    public function filter(\Closure $closure) : UserCollection
+    {
+        $users = new UserCollection();
+        $users->users = array_filter($this->users, $closure);
+        return $users;
+    }
+
     /**
      * Retrieve an external iterator
      * @link http://php.net/manual/en/iteratoraggregate.getiterator.php
@@ -28,7 +41,7 @@ class UserCollection implements \IteratorAggregate
      * <b>Traversable</b>
      * @since 5.0.0
      */
-    public function getIterator()
+    public function getIterator() : Traversable
     {
         return new \ArrayIterator($this->users);
     }

@@ -4,11 +4,25 @@ namespace Mihaeu\Hotshowers;
 
 class User
 {
+    /** @var Name */
+    private $name;
+    
+    /** @var Username */
     private $username;
+
+    /** @var Email */
     private $email;
+
+    /** @var Address */
     private $address;
+
+    /** @var Password */
     private $password;
+
+    /** @var Location */
     private $location;
+
+    /** @var PhoneNumber */
     private $phoneNumber;
 
     /**
@@ -20,6 +34,7 @@ class User
      * @param PhoneNumber $phoneNumber
      */
     public function __construct(
+        Name $name,
         Username $username,
         Email $email,
         Address $address,
@@ -27,12 +42,21 @@ class User
         Location $location,
         PhoneNumber $phoneNumber
     ) {
+        $this->name = $name;
         $this->username = $username;
         $this->email = $email;
         $this->address = $address;
         $this->password = $password;
         $this->location = $location;
         $this->phoneNumber = $phoneNumber;
+    }
+
+    /**
+     * @return Name
+     */
+    public function name() : Name
+    {
+        return $this->name;
     }
 
     /**

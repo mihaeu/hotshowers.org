@@ -6,8 +6,11 @@ use Mihaeu\Hotshowers\Address;
 use Mihaeu\Hotshowers\City;
 use Mihaeu\Hotshowers\Country;
 use Mihaeu\Hotshowers\Email;
+use Mihaeu\Hotshowers\FirstName;
 use Mihaeu\Hotshowers\HouseNumber;
+use Mihaeu\Hotshowers\LastName;
 use Mihaeu\Hotshowers\Location;
+use Mihaeu\Hotshowers\Name;
 use Mihaeu\Hotshowers\Password;
 use Mihaeu\Hotshowers\PhoneNumber;
 use Mihaeu\Hotshowers\Street;
@@ -21,6 +24,7 @@ class UserTestHelper
     public static function user(string $username = 'Test', string $email = 'test@test.com') : User
     {
         return new User(
+            new Name(new FirstName('First'), new LastName('Last')),
             new Username($username),
             new Email($email),
             new Address(

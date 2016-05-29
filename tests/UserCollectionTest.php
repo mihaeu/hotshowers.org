@@ -26,9 +26,9 @@ class UserCollectionTest extends \PHPUnit_Framework_TestCase
 {
     public function testIterable()
     {
-        $users = new UserCollection();
-        $users->add(UserTestHelper::user('user1'));
-        $users->add(UserTestHelper::user('user2'));
+        $users = (new UserCollection())
+            ->add(UserTestHelper::user('user1'))
+            ->add(UserTestHelper::user('user2'));
         $usersArray = iterator_to_array($users);
         $this->assertEquals(UserTestHelper::user('user1'), $usersArray[0]);
         $this->assertEquals(UserTestHelper::user('user2'), $usersArray[1]);
@@ -36,13 +36,13 @@ class UserCollectionTest extends \PHPUnit_Framework_TestCase
 
     public function testAddAll()
     {
-        $users1 = new UserCollection();
-        $users1->add(UserTestHelper::user('user1'));
-        $users1->add(UserTestHelper::user('user3'));
+        $users1 = (new UserCollection())
+            ->add(UserTestHelper::user('user1'))
+            ->add(UserTestHelper::user('user3'));
 
-        $users2 = new UserCollection();
-        $users2->add(UserTestHelper::user('user2'));
-        $users2->add(UserTestHelper::user('user4'));
+        $users2 = (new UserCollection())
+            ->add(UserTestHelper::user('user2'))
+            ->add(UserTestHelper::user('user4'));
 
         $allUsers = $users1->addAll($users2);
         $allUsersArray = iterator_to_array($allUsers);

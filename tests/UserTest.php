@@ -2,6 +2,8 @@
 
 namespace Mihaeu\Hotshowers;
 
+use Mihaeu\Hotshowers\Helpers\UserTestHelper;
+
 /**
  * @covers Mihaeu\Hotshowers\User
  *
@@ -36,14 +38,7 @@ class UserTest extends \PHPUnit_Framework_TestCase
             new HouseNumber('123abc')
         );
 
-        $this->user = new User(
-            new Username('Test'),
-            new Email('test@test.com'),
-            $this->address,
-            new Password('1234'),
-            new Location(1.23456789, 9.87654321),
-            new PhoneNumber('+123456789')
-        );
+        $this->user = UserTestHelper::user();
     }
     
     public function testHasUsername()
