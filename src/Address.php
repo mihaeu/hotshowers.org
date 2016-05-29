@@ -5,19 +5,19 @@ namespace Mihaeu\Hotshowers;
 
 class Address
 {
-    /** @var string */
+    /** @var City */
     private $city;
 
-    /** @var string */
+    /** @var Country */
     private $country;
 
-    /** @var int */
+    /** @var ZipCode */
     private $zipCode;
 
-    /** @var string */
+    /** @var Street */
     private $street;
 
-    /** @var string */
+    /** @var HouseNumber */
     private $houseNumber;
 
     /**
@@ -42,7 +42,7 @@ class Address
     }
 
     /**
-     * @return string
+     * @return City
      */
     public function city() : City
     {
@@ -50,7 +50,7 @@ class Address
     }
 
     /**
-     * @return string
+     * @return Country
      */
     public function country() : Country
     {
@@ -58,7 +58,7 @@ class Address
     }
 
     /**
-     * @return int
+     * @return ZipCode
      */
     public function zipCode() : ZipCode
     {
@@ -66,7 +66,7 @@ class Address
     }
 
     /**
-     * @return string
+     * @return Street
      */
     public function street() : Street
     {
@@ -74,7 +74,7 @@ class Address
     }
 
     /**
-     * @return string
+     * @return HouseNumber
      */
     public function houseNumber() : HouseNumber
     {
