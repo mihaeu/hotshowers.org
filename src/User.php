@@ -26,6 +26,7 @@ class User
     private $phoneNumber;
 
     /**
+     * @param Name $name
      * @param Username $username
      * @param Email $email
      * @param Address $address
