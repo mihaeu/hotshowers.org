@@ -75,7 +75,7 @@ class UserRepositoryTest extends \PHPUnit_Framework_TestCase
         $this->userMapper->method('findByCity')->willReturn(UserTestHelper::userCollection());
         $this->assertEquals(UserTestHelper::userCollection(), $this->userRepository->findByNameEmailCityUsername('Test'));
     }
-    
+
     public function testFindsNothing()
     {
         $this->userMapper->method('findByUsername')->willReturn(new UserCollection());

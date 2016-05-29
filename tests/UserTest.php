@@ -43,28 +43,28 @@ class UserTest extends \PHPUnit_Framework_TestCase
 
         $this->user = UserTestHelper::user();
     }
-    
+
     public function testHasName()
     {
         $expectedName = new Name(new FirstName('First'), new LastName('Last'));
         $this->assertEquals($expectedName, $this->user->name());
     }
-    
+
     public function testHasUsername()
     {
         $this->assertEquals(new Username('Test'), $this->user->username());
     }
-    
+
     public function testHasEmail()
     {
         $this->assertEquals(new Email('test@test.com'), $this->user->email());
     }
-    
+
     public function testHasAddress()
     {
         $this->assertEquals($this->address, $this->user->address());
     }
-    
+
     public function testHasPassword()
     {
         $this->assertEquals(new Password('1234'), $this->user->password());
