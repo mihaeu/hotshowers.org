@@ -8,6 +8,9 @@ use Mihaeu\Hotshowers\Helpers\UserTestHelper;
  * @covers Mihaeu\Hotshowers\UserRepository
  *
  * @uses Mihaeu\Hotshowers\User
+ * @uses Mihaeu\Hotshowers\Name
+ * @uses Mihaeu\Hotshowers\FirstName
+ * @uses Mihaeu\Hotshowers\LastName
  * @uses Mihaeu\Hotshowers\UserCollection
  * @uses Mihaeu\Hotshowers\Username
  * @uses Mihaeu\Hotshowers\Email

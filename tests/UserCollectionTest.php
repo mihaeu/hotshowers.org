@@ -8,6 +8,9 @@ use Mihaeu\Hotshowers\Helpers\UserTestHelper;
  * @covers Mihaeu\Hotshowers\UserCollection
  *
  * @uses Mihaeu\Hotshowers\User
+ * @uses Mihaeu\Hotshowers\Name
+ * @uses Mihaeu\Hotshowers\FirstName
+ * @uses Mihaeu\Hotshowers\LastName
  * @uses Mihaeu\Hotshowers\UserCollection
  * @uses Mihaeu\Hotshowers\Username
  * @uses Mihaeu\Hotshowers\Email
@@ -50,5 +53,16 @@ class UserCollectionTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(UserTestHelper::user('user3'), $allUsersArray[1]);
         $this->assertEquals(UserTestHelper::user('user2'), $allUsersArray[2]);
         $this->assertEquals(UserTestHelper::user('user4'), $allUsersArray[3]);
+    }
+
+    public function testFilter()
+    {
+        $users1 = (new UserCollection())
+            ->add(UserTestHelper::user('user1'))
+            ->add(UserTestHelper::user('user3'))
+            ->filter(function (User $user) {
+                return $user->username()->username() === 'user1';
+            });
+        $this->assertEquals('user1', iterator_to_array($users1)[0]->username()->username());
     }
 }

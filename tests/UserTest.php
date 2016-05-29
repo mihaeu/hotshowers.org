@@ -7,6 +7,9 @@ use Mihaeu\Hotshowers\Helpers\UserTestHelper;
 /**
  * @covers Mihaeu\Hotshowers\User
  *
+ * @uses Mihaeu\Hotshowers\Name
+ * @uses Mihaeu\Hotshowers\FirstName
+ * @uses Mihaeu\Hotshowers\LastName
  * @uses Mihaeu\Hotshowers\Username
  * @uses Mihaeu\Hotshowers\Email
  * @uses Mihaeu\Hotshowers\Address
@@ -39,6 +42,12 @@ class UserTest extends \PHPUnit_Framework_TestCase
         );
 
         $this->user = UserTestHelper::user();
+    }
+    
+    public function testHasName()
+    {
+        $expectedName = new Name(new FirstName('First'), new LastName('Last'));
+        $this->assertEquals($expectedName, $this->user->name());
     }
     
     public function testHasUsername()

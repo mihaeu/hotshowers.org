@@ -23,7 +23,7 @@ class Name
     /**
      * @return FirstName
      */
-    public function getFirstName() : FirstName
+    public function firstName() : FirstName
     {
         return $this->firstName;
     }
@@ -31,7 +31,7 @@ class Name
     /**
      * @return LastName
      */
-    public function getLastName() : LastName
+    public function lastName() : LastName
     {
         return $this->lastName;
     }
