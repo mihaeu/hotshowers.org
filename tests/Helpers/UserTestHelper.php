@@ -1,4 +1,4 @@
-<?php declare(strict_types = 1);
+<?php declare(strict_types=1);
 
 namespace Mihaeu\Hotshowers\Helpers;
 
@@ -27,8 +27,7 @@ class UserTestHelper
         $city = 'Testcity',
         $firstName = 'First',
         $lastName = 'Last'
-    ) : User
-    {
+    ) : User {
         return new User(
             new Name(new FirstName($firstName), new LastName($lastName)),
             new Username($username),
