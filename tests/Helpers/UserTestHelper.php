@@ -34,7 +34,7 @@ class UserTestHelper
             new Email($email),
             new Address(
                 new City($city),
-                Country::DE(),
+                new Country('DE'),
                 new ZipCode('12345'),
                 new Street('Test'),
                 new HouseNumber('123abc')

@@ -35,7 +35,7 @@ class UserTest extends \PHPUnit_Framework_TestCase
     {
         $this->address = new Address(
             new City('Testcity'),
-            Country::DE(),
+            new Country('DE'),
             new ZipCode(12345),
             new Street('Test'),
             new HouseNumber('123abc')
