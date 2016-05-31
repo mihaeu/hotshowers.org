@@ -16,11 +16,12 @@ cov=`php tools/phpunit.phar --coverage-text --colors=never \
     | head -n1 \
     | sed 's/Lines: *//'`
 
-if [ "$cov" -gt "$min_cov"  ]; then
+if [ "$cov" -eq "100"  ]; then
     printf "${OK_COLOR}✓ Coverage is $cov%%${NO_COLOR}\n"
-    exit 0
+elif [ "$cov" -gt "$min_cov" ]; then
+    printf "${WARN_COLOR}! Coverage is only $cov%%${NO_COLOR}\n"
 else
-    printf "${ERROR_COLOR}✗ Line coverage is only $cov%%, but needs to be at least $min_cov%%${NO_COLOR}\n"
+    printf "${ERROR_COLOR}✗ Coverage is only $cov%%, but needs to be at least $min_cov%%${NO_COLOR}\n"
     exit 1
 fi
 
