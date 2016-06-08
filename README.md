@@ -26,23 +26,23 @@ I would love to see more contributions to warmshowers.org, but was frustrated my
 
 ## Design Decisions
 
-### Immutability
+#### Immutability
 
 All value objects have to be immutable. If a setter or `add` method is required, it shall return a new instance.
 
-### `__toString()` and `toString()` on value objects
+#### `__toString()` and `toString()` on value objects
 
 All value objects have to implement `__toString()` and `toString()`. The implementation of `__toString()` shall call `toString()`.
 
-### Exposing scalar values on value objects
+#### Exposing scalar values on value objects
 
 Value objects which wrap a scalar value (e.g. `string` as the internal representation of `Username`) shall expose (i.e. only if necessary) them using a `toX()` method (e.g. `toString()`, `toInt()`, ...).
 
-### Type hints
+#### Type hints
 
 Using type hints for return values and parameters is mandatory.
 
-### Git commit messages
+#### Git commit messages
 
 Messages have to meet the following requirements:
 
