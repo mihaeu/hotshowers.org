@@ -1,4 +1,4 @@
-# hotshowers.org [![Travis](https://img.shields.io/travis/mihaeu/hotshowers.org.svg?maxAge=2592000)]() [![Coveralls](https://img.shields.io/coveralls/mihaeu/hotshowers.org.svg?maxAge=2592000)]() [![Gitter](https://img.shields.io/gitter/room/mihaeu/hotshowers.org.svg?maxAge=2592000&style=flat)]() ![License MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)
+# hotshowers.org [![Travis](https://img.shields.io/travis/mihaeu/hotshowers.org.svg?maxAge=2592000)]() [![Coveralls](https://img.shields.io/coveralls/mihaeu/hotshowers.org.svg?maxAge=2592000)]() [![Gitter](https://img.shields.io/gitter/room/mihaeu/hotshowers.org.svg?maxAge=2592000&style=flat)](https://gitter.im/mihaeu/hotshowers.org) ![License MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)
 
 > A complete re-write of warmshowers.org.
 
