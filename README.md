@@ -1,4 +1,4 @@
-# hotshowers.org [![Travis](https://img.shields.io/travis/mihaeu/hotshowers.org.svg?maxAge=2592000)]() [![Coveralls](https://img.shields.io/coveralls/mihaeu/hotshowers.org.svg?maxAge=2592000)]()
+# hotshowers.org [![Travis](https://img.shields.io/travis/mihaeu/hotshowers.org.svg?maxAge=2592000)]() [![Coveralls](https://img.shields.io/coveralls/mihaeu/hotshowers.org.svg?maxAge=2592000)]() [![Gitter](https://img.shields.io/gitter/room/mihaeu/hotshowers.org.svg?maxAge=2592000&style=flat)]() ![License MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=flat)
 
 > A complete re-write of warmshowers.org.
 
@@ -23,3 +23,27 @@ I would love to see more contributions to warmshowers.org, but was frustrated my
  - [ ] a user has a profile
  - [ ] a user can reply to a message
  - [ ] a new user has to sign up
+
+## Design Decisions
+
+### Immutability
+
+All value objects have to be immutable. If a setter or `add` method is required, it shall return a new instance.
+
+### `__toString()` and `toString()` on value objects
+
+All value objects have to implement `__toString()` and `toString()`. The implementation of `__toString()` shall call `toString()`.
+
+### Exposing scalar values on value objects
+
+Value objects which wrap a scalar value (e.g. `string` as the internal representation of `Username`) shall expose (i.e. only if necessary) them using a `toX()` method (e.g. `toString()`, `toInt()`, ...).
+
+### Type hints
+
+Using type hints for return values and parameters is mandatory.
+
+## Code Quality
+
+ - Line Coverage has to be at least 95%, but usually there shouldn't be any reason to drop below 100%
+ - All tests have to add `@covers` and `@uses` annotations to the test class (not the methods)
+ - Code has to pass PSR-2 style guidelines (see `style` task in the [Makefile](Makefile))
