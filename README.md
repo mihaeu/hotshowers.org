@@ -32,7 +32,7 @@ All value objects have to be immutable. If a setter or `add` method is required,
 
 #### `__toString()` and `toString()` on value objects
 
-All value objects have to implement `__toString()` and `toString()`. The implementation of `__toString()` shall call `toString()`.
+All value objects have to implement `__toString()` and `toString()`. The implementation of `__toString()` shall call `toString()`. `__toString()` should never be called from the code (magic method). Instead use `toString()` for consistency with other scalar getters.
 
 #### Exposing scalar values on value objects
 
