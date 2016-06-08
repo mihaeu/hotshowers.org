@@ -3,7 +3,8 @@ OK_COLOR=\x1b[32;01m
 ERROR_COLOR=\x1b[31;01m
 WARN_COLOR=\x1b[33;01m
 
-PHPUNIT=php tools/phpunit.phar
+PHPUNIT=vendor/bin/phpunit
+PHP_CS_FIXER=vendor/bin/php-cs-fixer
 
 all: tests testdox cov
 
@@ -24,6 +25,10 @@ testdox-osx:
 
 cov:
 	@$(PHPUNIT) -c phpunit.xml.dist --coverage-text
+
+style:
+	@php -n $(PHP_CS_FIXER) fix --verbose src
+	@php -n $(PHP_CS_FIXER) fix --verbose tests
 
 c: cov
 

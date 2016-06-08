@@ -9,7 +9,7 @@ before_script:
 
 script:
     - mkdir -p build/logs
-    - php tools/phpunit.phar -c phpunit.xml.dist --coverage-text --coverage-clover ./build/logs/clover.xml
+    - vendor/bin/phpunit -c phpunit.xml.dist --coverage-text --coverage-clover ./build/logs/clover.xml
     - tools/check-code-cov
 
 after_script:

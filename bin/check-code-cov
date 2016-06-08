@@ -11,7 +11,7 @@ ERROR_COLOR='\x1b[31;01m'
 WARN_COLOR='\x1b[33;01m'
 
 min_cov=95
-cov=`php tools/phpunit.phar --coverage-text --colors=never \
+cov=`vendor/bin/phpunit --coverage-text --colors=never \
     | egrep -o  "Lines:[[:space:]]+([0-9])+" \
     | head -n1 \
     | sed 's/Lines: *//'`
