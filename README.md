@@ -1,5 +1,7 @@
 # hotshowers.org [![Travis](https://img.shields.io/travis/mihaeu/hotshowers.org.svg?maxAge=2592000)]() [![Coveralls](https://img.shields.io/coveralls/mihaeu/hotshowers.org.svg?maxAge=2592000)]()
 
+[![Join the chat at https://gitter.im/mihaeu/hotshowers.org](https://badges.gitter.im/mihaeu/hotshowers.org.svg)](https://gitter.im/mihaeu/hotshowers.org?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 > A complete re-write of warmshowers.org.
 
 ## Why?
