@@ -8,6 +8,7 @@ use Mihaeu\Hotshowers\Helpers\UserTestHelper;
 
 /**
  * @covers Mihaeu\Hotshowers\UserCollection
+ * @covers Mihaeu\Hotshowers\Util\AbstractCollection
  *
  * @uses Mihaeu\Hotshowers\User
  * @uses Mihaeu\Hotshowers\Name
@@ -28,14 +29,43 @@ use Mihaeu\Hotshowers\Helpers\UserTestHelper;
  */
 class UserCollectionTest extends \PHPUnit_Framework_TestCase
 {
-    public function testIterable()
+    public function testCount()
+    {
+        $this->assertCount(2, (new UserCollection())
+            ->add(UserTestHelper::user('user1'))
+            ->add(UserTestHelper::user('user2'))
+        );
+    }
+
+    public function testMapToArray()
+    {
+        $this->assertEquals(['user1', 'user2'], (new UserCollection())
+            ->add(UserTestHelper::user('user1'))
+            ->add(UserTestHelper::user('user2'))
+            ->mapToArray(function (User $user) {
+                return $user->username();
+            })
+        );
+    }
+    
+    public function testReduce()
+    {
+        $this->assertEquals('user1user2', (new UserCollection())
+            ->add(UserTestHelper::user('user1'))
+            ->add(UserTestHelper::user('user2'))
+            ->reduce('', function (string $initial, User $user) {
+                return $initial.$user->username();
+            })
+        );
+    }
+
+    public function testToArray()
     {
         $users = (new UserCollection())
             ->add(UserTestHelper::user('user1'))
             ->add(UserTestHelper::user('user2'));
-        $usersArray = iterator_to_array($users);
-        $this->assertEquals(UserTestHelper::user('user1'), $usersArray[0]);
-        $this->assertEquals(UserTestHelper::user('user2'), $usersArray[1]);
+        $this->assertEquals(UserTestHelper::user('user1'), $users->toArray()[0]);
+        $this->assertEquals(UserTestHelper::user('user2'), $users->toArray()[1]);
     }
 
     public function testAddAll()
@@ -49,21 +79,21 @@ class UserCollectionTest extends \PHPUnit_Framework_TestCase
             ->add(UserTestHelper::user('user4'));
 
         $allUsers = $users1->addAll($users2);
-        $allUsersArray = iterator_to_array($allUsers);
-        $this->assertEquals(UserTestHelper::user('user1'), $allUsersArray[0]);
-        $this->assertEquals(UserTestHelper::user('user3'), $allUsersArray[1]);
-        $this->assertEquals(UserTestHelper::user('user2'), $allUsersArray[2]);
-        $this->assertEquals(UserTestHelper::user('user4'), $allUsersArray[3]);
+        $this->assertEquals(UserTestHelper::user('user1'), $allUsers->toArray()[0]);
+        $this->assertEquals(UserTestHelper::user('user3'), $allUsers->toArray()[1]);
+        $this->assertEquals(UserTestHelper::user('user2'), $allUsers->toArray()[2]);
+        $this->assertEquals(UserTestHelper::user('user4'), $allUsers->toArray()[3]);
     }
 
     public function testFilter()
     {
-        $users1 = (new UserCollection())
+        (new UserCollection())
             ->add(UserTestHelper::user('user1'))
             ->add(UserTestHelper::user('user3'))
             ->filter(function (User $user) {
                 return (string) $user->username() === 'user1';
+            })->each(function (User $user) {
+                $this->assertEquals('user1', $user->username());
             });
-        $this->assertEquals('user1', iterator_to_array($users1)[0]->username());
     }
 }

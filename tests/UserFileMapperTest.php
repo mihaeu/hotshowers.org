@@ -27,6 +27,7 @@ use Mihaeu\Hotshowers\Helpers\UserTestHelper;
  * @uses Mihaeu\Hotshowers\HouseNumber
  * @uses Mihaeu\Hotshowers\Street
  * @uses Mihaeu\Hotshowers\ZipCode
+ * @uses Mihaeu\Hotshowers\Util\AbstractCollection
  */
 class UserFileMapperTest extends \PHPUnit_Framework_TestCase
 {
@@ -51,13 +52,13 @@ class UserFileMapperTest extends \PHPUnit_Framework_TestCase
     {
         $user = UserTestHelper::user();
         $this->mapper->save($user);
-        $userArray = iterator_to_array($this->mapper->findAll());
+        $userArray = $this->mapper->findAll()->toArray();
         $this->assertEquals($user, $userArray[0]);
     }
 
     public function testFindNothing()
     {
-        $this->assertEmpty(iterator_to_array($this->mapper->findAll()));
+        $this->assertEmpty($this->mapper->findAll()->toArray());
     }
 
     public function testFindsByUsername()
@@ -68,7 +69,7 @@ class UserFileMapperTest extends \PHPUnit_Framework_TestCase
         $this->mapper->save($userBerlin);
         $userYork = UserTestHelper::user('userYork');
         $this->mapper->save($userYork);
-        $userArray = iterator_to_array($this->mapper->findByUsername('York'));
+        $userArray = $this->mapper->findByUsername('York')->toArray();
         $this->assertEquals($userArray[0], $userNewYork);
         $this->assertEquals($userArray[1], $userYork);
     }
@@ -81,7 +82,7 @@ class UserFileMapperTest extends \PHPUnit_Framework_TestCase
         $this->mapper->save($user2);
         $user3 = UserTestHelper::user('user3', 'same@live.com', 'Berlin');
         $this->mapper->save($user3);
-        $userArray = iterator_to_array($this->mapper->findByEmail('@yahoo'));
+        $userArray = $this->mapper->findByEmail('@yahoo')->toArray();
         $this->assertEquals($userArray[0], $user2);
     }
 
@@ -93,7 +94,7 @@ class UserFileMapperTest extends \PHPUnit_Framework_TestCase
         $this->mapper->save($user2);
         $user3 = UserTestHelper::user('user3', 'same@email.com', 'Berlin');
         $this->mapper->save($user3);
-        $userArray = iterator_to_array($this->mapper->findByCity('Berlin'));
+        $userArray = $this->mapper->findByCity('Berlin')->toArray();
         $this->assertEquals($userArray[0], $user1);
         $this->assertEquals($userArray[1], $user3);
     }
@@ -106,7 +107,7 @@ class UserFileMapperTest extends \PHPUnit_Framework_TestCase
         $this->mapper->save($user2);
         $user3 = UserTestHelper::user('user3', 'same@email.com', 'Berlin', 'Steve', 'McKinley');
         $this->mapper->save($user3);
-        $userArray = iterator_to_array($this->mapper->findByName('John'));
+        $userArray = $this->mapper->findByName('John')->toArray();
         $this->assertEquals($userArray[0], $user1);
         $this->assertEquals($userArray[1], $user2);
     }
