@@ -42,6 +42,20 @@ Value objects which wrap a scalar value (e.g. `string` as the internal represent
 
 Using type hints for return values and parameters is mandatory.
 
+### Git commit messages
+
+Messages have to meet the following requirements:
+
+1. Separate subject from body with a blank line
+2. Limit the subject line to 50 characters
+3. Capitalize the subject line
+4. Do not end the subject line with a period
+5. Use the imperative mood in the subject line
+6. Wrap the body at 72 characters
+7. Use the body to explain what and why vs. how
+
+For more info check out Chris Beams excellent post on [How to write a Git Commit Message](http://chris.beams.io/posts/git-commit/)
+
 ## Code Quality
 
  - Line Coverage has to be at least 95%, but usually there shouldn't be any reason to drop below 100%
