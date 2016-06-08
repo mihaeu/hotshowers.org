@@ -20,8 +20,16 @@ class HouseNumber
     /**
      * @return string
      */
-    public function __toString() : string
+    public function toString() : string
     {
         return $this->number;
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString() : string
+    {
+        return $this->toString();
     }
 }

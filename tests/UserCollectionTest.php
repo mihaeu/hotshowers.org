@@ -47,7 +47,7 @@ class UserCollectionTest extends \PHPUnit_Framework_TestCase
             })
         );
     }
-    
+
     public function testReduce()
     {
         $this->assertEquals('user1user2', (new UserCollection())

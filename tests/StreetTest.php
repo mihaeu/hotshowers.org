@@ -12,5 +12,6 @@ class StreetTest extends \PHPUnit_Framework_TestCase
     public function testHasStreet()
     {
         $this->assertEquals('Test', new Street('Test'));
+        $this->assertEquals('Test', (new Street('Test'))->toString());
     }
 }

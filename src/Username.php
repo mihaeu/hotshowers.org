@@ -20,8 +20,16 @@ class Username
     /**
      * @return string
      */
-    public function __toString() : string
+    public function toString() : string
     {
         return $this->username;
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString() : string
+    {
+        return $this->toString();
     }
 }

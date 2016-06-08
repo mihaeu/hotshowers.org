@@ -20,8 +20,16 @@ class FirstName
     /**
      * @return string
      */
-    public function __toString() : string
+    public function toString() : string
     {
         return $this->firstName;
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString() : string
+    {
+        return $this->toString();
     }
 }

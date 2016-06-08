@@ -53,4 +53,11 @@ class AddressTest extends \PHPUnit_Framework_TestCase
     {
         $this->assertEquals(new HouseNumber('123abc'), $this->address->houseNumber());
     }
+
+    public function testToString()
+    {
+        $this->assertEquals('Test 123abc'.PHP_EOL
+            .'12345 Testcity'.PHP_EOL
+            .'Germany', $this->address);
+    }
 }

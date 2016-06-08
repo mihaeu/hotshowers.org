@@ -20,8 +20,16 @@ class City
     /**
      * @return string
      */
-    public function __toString() : string
+    public function toString() : string
     {
         return $this->city;
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString() : string
+    {
+        return $this->toString();
     }
 }

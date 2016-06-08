@@ -29,4 +29,9 @@ class NameTest extends \PHPUnit_Framework_TestCase
     {
         $this->assertEquals(new LastName('Last'), $this->name->lastName());
     }
+
+    public function testToString()
+    {
+        $this->assertEquals('First Last', $this->name);
+    }
 }

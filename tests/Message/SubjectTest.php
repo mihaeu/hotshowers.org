@@ -13,6 +13,7 @@ class SubjectTest extends \PHPUnit_Framework_TestCase
 {
     public function testHasSubject()
     {
-        $this->assertEquals('important!', (new Subject('important!'))->subject());
+        $this->assertEquals('important!', (new Subject('important!'))->toString());
+        $this->assertEquals('important!', (new Subject('important!')));
     }
 }

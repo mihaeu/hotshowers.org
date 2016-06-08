@@ -20,8 +20,16 @@ class Subject
     /**
      * @return string
      */
-    public function subject() : string
+    public function toString() : string
     {
         return $this->subject;
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString() : string
+    {
+        return $this->toString();
     }
 }

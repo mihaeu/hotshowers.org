@@ -81,4 +81,14 @@ class Address
     {
         return $this->houseNumber;
     }
+
+    /**
+     * @return string
+     */
+    public function __toString() : string
+    {
+        return $this->street.' '.$this->houseNumber.PHP_EOL.
+            $this->zipCode.' '.$this->city.PHP_EOL.
+            $this->country;
+    }
 }

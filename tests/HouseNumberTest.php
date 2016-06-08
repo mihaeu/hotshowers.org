@@ -11,7 +11,7 @@ class HouseNumberTest extends \PHPUnit_Framework_TestCase
 {
     public function testHasHouseNumber()
     {
-        $houseNumber = new HouseNumber('123abc');
-        $this->assertEquals('123abc', $houseNumber);
+        $this->assertEquals('123abc', new HouseNumber('123abc'));
+        $this->assertEquals('123abc', (new HouseNumber('123abc'))->toString());
     }
 }

@@ -20,8 +20,16 @@ class Password
     /**
      * @return string
      */
-    public function __toString() : string
+    public function toString() : string
     {
         return $this->password;
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString() : string
+    {
+        return $this->toString();
     }
 }

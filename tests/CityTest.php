@@ -13,5 +13,6 @@ class CityTest extends \PHPUnit_Framework_TestCase
     {
         $city = new City('Test');
         $this->assertEquals('Test', $city);
+        $this->assertEquals('Test', $city->toString());
     }
 }

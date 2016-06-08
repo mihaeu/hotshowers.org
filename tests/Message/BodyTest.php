@@ -11,6 +11,7 @@ class BodyTest extends \PHPUnit_Framework_TestCase
 {
     public function testHasBody()
     {
-        $this->assertEquals('body', (new Body('body'))->body());
+        $this->assertEquals('body', (new Body('body'))->toString());
+        $this->assertEquals('body', (new Body('body')));
     }
 }

@@ -11,7 +11,7 @@ class EmailTest extends \PHPUnit_Framework_TestCase
 {
     public function testHasAddress()
     {
-        $email = new Email('test@test.com');
-        $this->assertEquals('test@test.com', $email);
+        $this->assertEquals('test@test.com', new Email('test@test.com'));
+        $this->assertEquals('test@test.com', (new Email('test@test.com'))->toString());
     }
 }

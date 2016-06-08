@@ -20,8 +20,16 @@ class Body
     /**
      * @return string
      */
-    public function body() : string
+    public function toString() : string
     {
         return $this->body;
+    }
+
+    /**
+     * @return string
+     */
+    public function __toString() : string
+    {
+        return $this->toString();
     }
 }

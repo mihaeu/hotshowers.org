@@ -37,4 +37,12 @@ class Name
     {
         return $this->lastName;
     }
+
+    /**
+     * @return string
+     */
+    public function __toString() : string
+    {
+        return $this->firstName.' '.$this->lastName;
+    }
 }
