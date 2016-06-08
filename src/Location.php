@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare (strict_types = 1);
 
 namespace Mihaeu\Hotshowers;
 
@@ -12,6 +14,7 @@ class Location
 
     /**
      * Location constructor.
+     *
      * @param float $longitude
      * @param float $latitude
      */

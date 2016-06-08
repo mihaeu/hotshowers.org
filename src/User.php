@@ -6,7 +6,7 @@ class User
 {
     /** @var Name */
     private $name;
-    
+
     /** @var Username */
     private $username;
 
@@ -26,12 +26,12 @@ class User
     private $phoneNumber;
 
     /**
-     * @param Name $name
-     * @param Username $username
-     * @param Email $email
-     * @param Address $address
-     * @param Password $password
-     * @param Location $location
+     * @param Name        $name
+     * @param Username    $username
+     * @param Email       $email
+     * @param Address     $address
+     * @param Password    $password
+     * @param Location    $location
      * @param PhoneNumber $phoneNumber
      */
     public function __construct(

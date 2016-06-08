@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare (strict_types = 1);
 
 namespace Mihaeu\Hotshowers\Message;
 
@@ -20,9 +22,9 @@ class Message
 
     /**
      * @param Subject $subject
-     * @param Body $body
-     * @param User $from
-     * @param User $to
+     * @param Body    $body
+     * @param User    $from
+     * @param User    $to
      */
     public function __construct(Subject $subject, Body $body, User $from, User $to)
     {

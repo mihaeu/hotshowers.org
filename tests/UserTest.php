@@ -21,7 +21,6 @@ use Mihaeu\Hotshowers\Helpers\UserTestHelper;
  * @uses Mihaeu\Hotshowers\HouseNumber
  * @uses Mihaeu\Hotshowers\Street
  * @uses Mihaeu\Hotshowers\ZipCode
- *
  */
 class UserTest extends \PHPUnit_Framework_TestCase
 {

@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare (strict_types = 1);
 
 namespace Mihaeu\Hotshowers;
 
@@ -6,13 +8,13 @@ class Name
 {
     /** @var FirstName */
     private $firstName;
-    
+
     /** @var LastName */
     private $lastName;
 
     /**
      * @param FirstName $firstName
-     * @param LastName $lastName
+     * @param LastName  $lastName
      */
     public function __construct(FirstName $firstName, LastName $lastName)
     {

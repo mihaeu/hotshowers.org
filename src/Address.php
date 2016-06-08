@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare (strict_types = 1);
 
 namespace Mihaeu\Hotshowers;
 
@@ -20,10 +22,10 @@ class Address
     private $houseNumber;
 
     /**
-     * @param City $city
-     * @param Country $country
-     * @param ZipCode $zipCode
-     * @param Street $street
+     * @param City        $city
+     * @param Country     $country
+     * @param ZipCode     $zipCode
+     * @param Street      $street
      * @param HouseNumber $houseNumber
      */
     public function __construct(

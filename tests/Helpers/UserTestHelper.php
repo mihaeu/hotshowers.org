@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare (strict_types = 1);
 
 namespace Mihaeu\Hotshowers\Helpers;
 
@@ -49,6 +51,7 @@ class UserTestHelper
     {
         $users = new UserCollection();
         $users->add(self::user());
+
         return $users;
     }
 }

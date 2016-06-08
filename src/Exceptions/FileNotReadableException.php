@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare (strict_types = 1);
 
 namespace Mihaeu\Hotshowers\Exceptions;
 
@@ -9,6 +11,6 @@ class FileNotReadableException extends \Exception
      */
     public function __construct($file)
     {
-        parent::__construct($file->getPathname() . ' is not readable.');
+        parent::__construct($file->getPathname().' is not readable.');
     }
 }

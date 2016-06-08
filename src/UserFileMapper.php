@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare (strict_types = 1);
 
 namespace Mihaeu\Hotshowers;
 
@@ -12,6 +14,7 @@ class UserFileMapper implements UserMapper
 
     /**
      * @param \SplFileInfo $file
+     *
      * @throws FileNotReadableException
      * @throws FileNotWritableException
      */
@@ -29,6 +32,7 @@ class UserFileMapper implements UserMapper
         if ($fileContent === '') {
             return new UserCollection();
         }
+
         return unserialize($fileContent);
     }
 
@@ -78,6 +82,7 @@ class UserFileMapper implements UserMapper
 
     /**
      * @param \SplFileInfo $file
+     *
      * @throws FileNotReadableException
      */
     private function ensureFileIsReadable(\SplFileInfo $file)
@@ -89,6 +94,7 @@ class UserFileMapper implements UserMapper
 
     /**
      * @param \SplFileInfo $file
+     *
      * @throws FileNotWritableException
      */
     private function ensureFileIsWritable(\SplFileInfo $file)

@@ -1,4 +1,6 @@
-<?php declare(strict_types=1);
+<?php
+
+declare (strict_types = 1);
 
 namespace Mihaeu\Hotshowers;
 
@@ -23,7 +25,6 @@ use Mihaeu\Hotshowers\Helpers\UserTestHelper;
  * @uses Mihaeu\Hotshowers\HouseNumber
  * @uses Mihaeu\Hotshowers\Street
  * @uses Mihaeu\Hotshowers\ZipCode
-
  */
 class UserCollectionTest extends \PHPUnit_Framework_TestCase
 {
